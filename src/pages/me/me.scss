@@ -1,6 +1,18 @@
 page-me {
+  .login-or-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 1em;
+    }
+    img {
+      height: 1em;
+    }
+  }
+
   hr {
-    margin: 4rem 1.5rem;
+    margin: 0rem 1.5rem;
     color: #c3c3c3;
   }
   span {
@@ -8,13 +20,12 @@ page-me {
   }
 
   .list-customx {
-    margin: 0.5rem;
+    margin: 0.1rem;
     display: flex;
     justify-content: space-between;
 
     img {
-      height: 1.5em;
-      width: 1.5em;
+      height: 1em;
     }
   }
   .version-code {
@@ -24,7 +35,7 @@ page-me {
     span {
       margin-top: 4em;
       color: #7c7c7c;
-      size: 0.5em;
+      font-size: 1em;
     }
   }
 }
