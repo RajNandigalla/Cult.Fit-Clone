@@ -1,9 +1,14 @@
 <ion-content>
   <hr>
   <ion-list no-lines inset>
-    <ion-item *ngFor="let item of meData">
-      {{item.name}}
-      <ion-icon name="rose" item-end></ion-icon>
-    </ion-item>
+    <button ion-item *ngFor="let item of meData">
+      <div class="list-customx">
+        <span>{{item.name}}</span>
+        <img [src]='item.icon' />
+      </div>
+    </button>
   </ion-list>
+  <div class="version-code">
+    <span>7.18.121</span>
+  </div>
 </ion-content>
