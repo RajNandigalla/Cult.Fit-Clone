@@ -11,20 +11,30 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PlanPage } from '../pages/plan/plan';
 import { ShopPage } from '../pages/shop/shop';
 import { MePage } from '../pages/me/me';
+import { ConfirmModal } from '../modals/confirmModal/confirmModal';
+import { TodoPage } from '../pages/plan/todo/todo';
+import { MyPacksPage } from '../pages/plan/myPacks/myPacks';
+import { ChallengesPage } from '../pages/plan/Challenges/challenges';
+import { SuperTabsModule } from '../_components/slide-tabs';
 
 const _Pages = [
   MyApp,
   PlanPage,
   ShopPage,
   MePage,
-  TabsPage
+  TabsPage,
+  ConfirmModal,
+  TodoPage,
+  MyPacksPage,
+  ChallengesPage
 ];
 
 @NgModule({
   declarations: [..._Pages],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SuperTabsModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [..._Pages],

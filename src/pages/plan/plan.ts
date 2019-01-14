@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { TodoPage } from './todo/todo';
+import { MyPacksPage } from './myPacks/myPacks';
+import { ChallengesPage } from './Challenges/challenges';
 
 @Component({
   selector: 'page-plan',
@@ -7,8 +10,11 @@ import { NavController } from 'ionic-angular';
 })
 export class PlanPage {
 
-  constructor(public navCtrl: NavController) {
+  page1 = TodoPage;
+  page2 = MyPacksPage;
+  page3 = ChallengesPage;
 
-  }
-
+  constructor(
+    public navCtrl: NavController
+  ) { }
 }
