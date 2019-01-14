@@ -1,0 +1,7 @@
+{
+  "name": "Alucard",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
