@@ -1,0 +1,17 @@
+modal-confirm{
+    background: rgba(0,0,0,0.24);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 2em;
+
+    .logout{
+        background-color: #FFF;
+        min-height: 150px;
+        text-align: center;
+
+        p{
+            font-family: HelMedium;
+        }
+    }
+}
