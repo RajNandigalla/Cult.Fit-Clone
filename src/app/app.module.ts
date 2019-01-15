@@ -15,7 +15,14 @@ import { ConfirmModal } from '../modals/confirmModal/confirmModal';
 import { TodoPage } from '../pages/plan/todo/todo';
 import { MyPacksPage } from '../pages/plan/myPacks/myPacks';
 import { ChallengesPage } from '../pages/plan/Challenges/challenges';
-import { SuperTabsModule } from '../_components/slide-tabs';
+import { SuperTabsModule } from '../root/slide-tabs';
+import { CardHeaderComponent } from '../pages/shop/card-header/card-header';
+import { CardBodyHeaderComponent } from '../pages/shop/card-body-header/card-body-header';
+
+const _components = [
+  CardHeaderComponent,
+  CardBodyHeaderComponent
+];
 
 const _Pages = [
   MyApp,
@@ -30,14 +37,14 @@ const _Pages = [
 ];
 
 @NgModule({
-  declarations: [..._Pages],
+  declarations: [..._Pages, ..._components],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     SuperTabsModule.forRoot(),
   ],
   bootstrap: [IonicApp],
-  entryComponents: [..._Pages],
+  entryComponents: [..._Pages, ..._components],
   providers: [
     StatusBar,
     SplashScreen,

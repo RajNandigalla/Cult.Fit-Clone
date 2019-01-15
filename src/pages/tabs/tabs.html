@@ -1,12 +1,7 @@
 <ion-content>
-  <super-tabs tabsPlacement='bottom' toolbarBackground='dark' toolbarColor='white' indicatorColor='tabIndicator'>
+  <super-tabs tabsPlacement='bottom' toolbarBackground='dark' toolbarColor='white' indicatorColor='tabIndicator' selectedTabIndex='1'>
     <super-tab [root]="tab1Root" title="Plan" icon="md-calendar"></super-tab>
     <super-tab [root]="tab2Root" title="Shop" icon="md-ionic"></super-tab>
     <super-tab [root]="tab3Root" title="Me" icon="md-person"></super-tab>
   </super-tabs>
-  <ion-fab bottom center (click)='logout()'>
-    <button ion-fab mini color='fab'>
-      <ion-icon name="add"></ion-icon>
-    </button>
-  </ion-fab>
 </ion-content>

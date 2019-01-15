@@ -1,3 +1,119 @@
-<ion-content padding>
+<ion-content>
+    <div class="shop-page">
+        <div class="main-header">
+            <div class="shop-header">
+                <img src='./../../assets/imgs/common/logo.png' />
+                <div>
+                    <span>Bangalore</span>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+            <div class="tabs">
+                <span>eat.fit</span>
+                <span class="divider"></span>
+                <span>cult.fit</span>
+                <span class="divider"></span>
+                <span>mind.fit</span>
+                <span class="divider"></span>
+                <span>care.fit</span>
+            </div>
+        </div>
+        <div class="main-body">
 
+            <div class="slides-custom">
+                <ion-slides>
+                    <ion-slide *ngFor="let item of banner">
+                        <img [src]="item" class="slider-banner" />
+                    </ion-slide>
+                </ion-slides>
+            </div>
+
+            <div class="eat-fit">
+                <card-header title="eat.fit" subtitle="Healthy and tasty meals"></card-header>
+                <!-- <card-body-header title="BREAKFAST MEALS"></card-body-header>
+                <ion-slides spaceBetween='6' slidesPerView="1">
+                    <ion-slide *ngFor="let item of eatdata;let i =index">
+                        <div class="slider-img1">
+                            <img [src]="item"  />
+                            <div class="card-price">
+                                <span>{{i+1}} Pack</span>
+                                <span>FREE</span>
+                            </div>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+
+                <hr /> -->
+
+                <card-body-header title="BREAKFAST PACKS"></card-body-header>
+                <ion-slides spaceBetween='12' slidesPerView="2">
+                    <ion-slide *ngFor="let item of eatdata;let i =index">
+                        <img [src]="item" class="slider-img" />
+                        <div class="card-price">
+                            <span>{{i+1}} Pack</span>
+                            <span>FREE</span>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+            </div>
+
+            <div class="cult-fit">
+                <card-header title="cult.fit" subtitle="Workout at Cult"></card-header>
+                <card-body-header title="WORKOUT FROM HOME"></card-body-header>
+                <ion-slides spaceBetween='12' slidesPerView="2">
+                    <ion-slide *ngFor="let item of cultdata;let i =index">
+                        <img [src]="item" class="slider-img" />
+                        <div class="card-price">
+                            <span>{{i+1}} Pack</span>
+                            <span>FREE</span>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+            </div>
+
+            <div class="mind-fit">
+                <card-header title="mind.fit" subtitle="Complete Mind-Body workouts"></card-header>
+                <card-body-header title="MINDFULNESS AT HOME"></card-body-header>
+                <ion-slides spaceBetween='12' slidesPerView="2">
+                    <ion-slide *ngFor="let item of minddata;let i =index">
+                        <img [src]="item" class="slider-img" />
+                        <div class="card-price">
+                            <span>{{i+1}} Pack</span>
+                            <span>FREE</span>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+            </div>
+
+            <div class="care-fit">
+                <card-header title="care.fit" subtitle="Personal Doctor"></card-header>
+                <div class="care-fit-body">
+                    <span class="title">
+                        CONSULT PHYSICIAN & PAEDIATRICIAN
+                    </span>
+                    <span class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto neque,
+                        repellendus porro ad esse nulla quaerat dolor numquam sapiente exercitationem accusamus
+                        voluptate consectetur nesciunt incidunt explicabo. Neque vero officia laudantium!</span>
+                    <div class="video-call">
+                        <img src="./../../assets/imgs/common/video.png">
+                        <span>Video call</span>
+                    </div>
+                    <div>
+                        <span class="del-color"><del> &#x20B9; 350</del></span>
+                        <span> &#x20B9; 175</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cure-fit-philosophy">
+
+            </div>
+
+            <div class="be-better">
+                <div class="line"></div>
+                <span>BE BETTER</span>
+                <span>EVERYDAY</span>
+            </div>
+        </div>
+    </div>
 </ion-content>

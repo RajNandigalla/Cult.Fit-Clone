@@ -1,3 +1,176 @@
-page-about {
-
+page-shop {
+    .shop-page {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+    .main-header {
+        padding: 1rem 1.5rem;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, .16);
+        background: #FFF;
+        .shop-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                height: 32px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                span {
+                    color: #757575;
+                    font-family: HelMedium;
+                    font-size: 1.1em;
+                }
+                .indicator {
+                    border-radius: 50%;
+                    height: 8px;
+                    width: 8px;
+                    background: #488aff;
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+        .tabs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem 0;
+            span {
+                color: #272727;
+                font-family: HelMedium;
+                font-size: 1.3em;
+            }
+            .divider {
+                width: 2px;
+                background: #c3c3c3;
+                height: 24px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .main-body {
+        background: #f5f5f5;
+        margin-top: 16px;
+        flex: 1;
+        .slides-custom {
+            ion-slide {
+                padding: 0 1.4rem;
+                background: white;
+            }
+            .slider-banner {
+                border-radius: 8px;
+                box-shadow: 2px 3px 6px rgba(0, 0, 0, .16);
+                border: 1px solid rgba(0, 0, 0, .16);
+            }
+        }
+        .slider-img1 {
+            display: flex;
+            margin-left: 2rem;
+            img {
+                border-radius: 6px;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, .16);
+                border: 1px solid rgba(0, 0, 0, .16);
+                height: 200px;
+            }
+        }
+        .slider-img {
+            border-radius: 6px;
+            margin-left: 2rem;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, .16);
+            border: 1px solid rgba(0, 0, 0, .16);
+        }
+        .eat-fit,
+        .care-fit,
+        .cult-fit,
+        .mind-fit {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            margin-top: 1.5rem;
+            background: #FFF;
+            .card-price {
+                display: flex;
+                font-family: HelMedium;
+                justify-content: space-between;
+                margin-left: 2rem;
+                padding-left: 2rem;
+                font-size: 0.8em;
+                margin-top: 0.5rem;
+                span:first-child {
+                    color: #757575;
+                }
+            }
+        }
+        .care-fit,
+        .cult-fit,
+        .mind-fit {
+            ion-slide {
+                width: 40% !important;
+            }
+        }
+        .eat-fit {
+            margin-top: 0;
+        }
+        .care-fit {
+            .care-fit-body {
+                padding: 1rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    color: #272727;
+                    font-family: HelMedium;
+                    font-size: 1.3em;
+                }
+                .subtitle {
+                    margin-top: 0.5rem;
+                    color: #757575;
+                    font-family: HelMedium;
+                    font-size: 1em;
+                }
+                .video-call {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    background-image: linear-gradient(125deg, rgb(136, 179, 255), rgb(100, 214, 255));
+                    padding: 1.5em;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .16);
+                    margin: 1.5rem 0;
+                    span {
+                        color: #FFF;
+                        font-size: 1em;
+                        font-family: HelMedium;
+                        margin-left: 0.5rem;
+                    }
+                    img {
+                        height: 24px;
+                    }
+                }
+            }
+        }
+        .be-better {
+            padding: 4rem 1.5rem;
+            margin-top: 1.5rem;
+            background: #FFF;
+            .line {
+                background: #64b5f6;
+                height: 0.5rem;
+                width: 50px;
+            }
+            span {
+                color: #757575;
+                font-family: HelMedium;
+                font-size: 3em;
+            }
+            span:last-child {
+                color: #bdbdbd;
+            }
+        }
+    }
+    .del-color {
+        color: #757575;
+        font-family: HelMedium;
+        margin: 0 0.5rem;
+    }
 }
