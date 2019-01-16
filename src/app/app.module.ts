@@ -11,13 +11,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PlanPage } from '../pages/plan/plan';
 import { ShopPage } from '../pages/shop/shop';
 import { MePage } from '../pages/me/me';
-import { ConfirmModal } from '../modals/confirmModal/confirmModal';
 import { TodoPage } from '../pages/plan/todo/todo';
-import { MyPacksPage } from '../pages/plan/myPacks/myPacks';
-import { ChallengesPage } from '../pages/plan/Challenges/challenges';
 import { SuperTabsModule } from '../root/slide-tabs';
 import { CardHeaderComponent } from '../pages/shop/card-header/card-header';
 import { CardBodyHeaderComponent } from '../pages/shop/card-body-header/card-body-header';
+import { ConfirmModal } from '../modals/confirm-modal/confirmmodal';
+import { MyPacksPage } from '../pages/plan/mypacks/mypacks';
+import { ChallengesPage } from '../pages/plan/challenges/challenges';
 
 const _components = [
   CardHeaderComponent,
