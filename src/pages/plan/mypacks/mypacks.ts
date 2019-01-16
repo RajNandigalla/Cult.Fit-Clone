@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-mypacks',
-  templateUrl: 'myPacks.html'
+  templateUrl: 'mypacks.html'
 })
 export class MyPacksPage {
 

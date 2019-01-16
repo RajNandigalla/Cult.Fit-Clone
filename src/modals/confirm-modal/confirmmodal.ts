@@ -4,7 +4,7 @@ import { YES } from '../modalConstants';
 
 @Component({
     selector: 'modal-confirm',
-    templateUrl: 'confirmModal.html'
+    templateUrl: 'confirmmodal.html'
 })
 export class ConfirmModal {
 
