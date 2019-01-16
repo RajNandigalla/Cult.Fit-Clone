@@ -1,6 +1,8 @@
 <ion-content>
     <div>
-        <img src="./../../../assets/imgs/common/leftarrow.png" (click)='popPage()' class="back">
+        <div class="back" (click)='popPage()'>
+            <img src="./../../../assets/imgs/common/leftarrow.png">
+        </div>
         <div class="details">
             <img [src]='img' />
             <span>{{count}} Packs</span>
