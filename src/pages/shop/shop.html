@@ -47,7 +47,7 @@
 
                 <card-body-header title="BREAKFAST PACKS"></card-body-header>
                 <ion-slides spaceBetween='12' slidesPerView="2">
-                    <ion-slide *ngFor="let item of eatdata;let i =index">
+                    <ion-slide *ngFor="let item of eatdata;let i =index"  (click)='shopDetailsNav(item,i)'>
                         <img [src]="item" class="slider-img" />
                         <div class="card-price">
                             <span>{{i+1}} Pack</span>
@@ -61,7 +61,7 @@
                 <card-header title="cult.fit" subtitle="Workout at Cult"></card-header>
                 <card-body-header title="WORKOUT FROM HOME"></card-body-header>
                 <ion-slides spaceBetween='12' slidesPerView="2">
-                    <ion-slide *ngFor="let item of cultdata;let i =index">
+                    <ion-slide *ngFor="let item of cultdata;let i =index"  (click)='shopDetailsNav(item,i)'>
                         <img [src]="item" class="slider-img" />
                         <div class="card-price">
                             <span>{{i+1}} Pack</span>
@@ -75,7 +75,7 @@
                 <card-header title="mind.fit" subtitle="Complete Mind-Body workouts"></card-header>
                 <card-body-header title="MINDFULNESS AT HOME"></card-body-header>
                 <ion-slides spaceBetween='12' slidesPerView="2">
-                    <ion-slide *ngFor="let item of minddata;let i =index">
+                    <ion-slide *ngFor="let item of minddata;let i =index" (click)='shopDetailsNav(item,i)'>
                         <img [src]="item" class="slider-img" />
                         <div class="card-price">
                             <span>{{i+1}} Pack</span>

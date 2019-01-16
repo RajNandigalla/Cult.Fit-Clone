@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-todo',
@@ -7,8 +6,6 @@ import { NavController } from 'ionic-angular';
 })
 export class TodoPage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
+  public todayDate = new Date().toISOString();;
 
 }

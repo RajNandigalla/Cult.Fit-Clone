@@ -1,0 +1,125 @@
+page-todo {
+    background: #eceff1;
+    overflow: scroll;
+    padding-bottom: 120px;
+    .todo-main {
+        padding: 1rem 1.2rem;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        .date-picker {
+            display: flex;
+            align-items: center;
+            img {
+                height: 16px;
+            }
+            ion-datetime {
+                padding: 13px 16px 13px 16px;
+                .datetime-text {
+                    font-family: HelMedium;
+                }
+            }
+            ion-item {
+                width: unset;
+            }
+        }
+        .log-item {
+            display: flex;
+            margin-top: 2rem;
+            .due {
+                color: #607d8b;
+                margin: 0 2em;
+                font-family: HelMedium;
+            }
+            .block {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                padding: 0 0.4rem;
+            }
+            .first-line {
+                color: #424242;
+                font-family: HelMedium;
+                display: flex;
+                justify-content: space-between;
+                span:last-child {
+                    color: #607d8b;
+                    font-family: HelMedium;
+                    font-size: 0.9em;
+                }
+            }
+            .second-line {
+                margin-top: 0.8rem;
+                color: #90a4ae;
+                font-family: HelMedium;
+                font-size: 0.9em;
+            }
+            .banner {
+                margin: 1rem 0;
+                border-radius: 8px;
+                box-shadow: 2px 3px 6px rgba(0, 0, 0, .16)
+            }
+            .download {
+                background: #e8eaf6;
+                padding: 1rem 0.8rem;
+                border-radius: 20px;
+                width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 12px;
+                    margin-right: 0.5rem;
+                }
+                span {
+                    font-family: HelMedium;
+                    color: #424242;
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .log-item:not(:last-child) {
+            .block {
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #c0c0c0;
+            }
+        }
+    }
+    .todo-footer {
+        padding: 1.2rem 2rem;
+        .logged {
+            font-size: 1.2em;
+            font-family: HelMedium;
+            color: #607d8b;
+        }
+        img {
+            height: 12px;
+        }
+        .log-item {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 1.5rem;
+            .close {
+                margin: 0 2rem;
+            }
+            .block {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                padding: 0 0.8rem;
+            }
+            .first-line {
+                color: #424242;
+                margin-top: 0.8rem;
+                font-family: HelMedium;
+            }
+            .second-line {
+                color: #90a4ae;
+                font-family: HelMedium;
+                display: flex;
+                margin-top: 0.8rem;
+                justify-content: space-between;
+            }
+        }
+    }
+}

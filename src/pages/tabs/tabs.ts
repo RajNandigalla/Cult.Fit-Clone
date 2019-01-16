@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { PlanPage } from '../plan/plan';
 import { ShopPage } from '../shop/shop';
 import { MePage } from '../me/me';
-import { SuperTabsController } from '../../root/slide-tabs';
+import { SuperTabsController } from '../../_components/slide-tabs';
 
 @Component({
   selector: 'page-tabs',

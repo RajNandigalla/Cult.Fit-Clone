@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController, Platform } from 'ionic-angular';
 import { TodoPage } from './todo/todo';
-import { YES } from '../../modals/modalConstants';
+import { YES } from '../../_modals/modalConstants';
 import { MyPacksPage } from './mypacks/mypacks';
 import { ChallengesPage } from './challenges/challenges';
-import { ConfirmModal } from '../../modals/confirm-modal/confirmmodal';
+import { ConfirmModal } from '../../_modals/confirm-modal/confirmmodal';
 
 @Component({
   selector: 'page-plan',

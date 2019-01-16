@@ -12,17 +12,24 @@ import { PlanPage } from '../pages/plan/plan';
 import { ShopPage } from '../pages/shop/shop';
 import { MePage } from '../pages/me/me';
 import { TodoPage } from '../pages/plan/todo/todo';
-import { SuperTabsModule } from '../root/slide-tabs';
 import { CardHeaderComponent } from '../pages/shop/card-header/card-header';
 import { CardBodyHeaderComponent } from '../pages/shop/card-body-header/card-body-header';
-import { ConfirmModal } from '../modals/confirm-modal/confirmmodal';
+import { ConfirmModal } from '../_modals/confirm-modal/confirmmodal';
 import { MyPacksPage } from '../pages/plan/mypacks/mypacks';
 import { ChallengesPage } from '../pages/plan/challenges/challenges';
+import { SuperTabsModule } from '../_components/slide-tabs';
+import { ComingSoonPage } from '../_components/coming-soon/coming-soon';
+import { shopDetailsPage } from '../pages/shop/shop-details/shopdetails';
 
 const _components = [
   CardHeaderComponent,
-  CardBodyHeaderComponent
+  CardBodyHeaderComponent,
+  ComingSoonPage,
 ];
+
+const _modals = [
+  ConfirmModal,
+]
 
 const _Pages = [
   MyApp,
@@ -30,21 +37,21 @@ const _Pages = [
   ShopPage,
   MePage,
   TabsPage,
-  ConfirmModal,
   TodoPage,
   MyPacksPage,
-  ChallengesPage
+  ChallengesPage,
+  shopDetailsPage
 ];
 
 @NgModule({
-  declarations: [..._Pages, ..._components],
+  declarations: [..._Pages, ..._components, ..._modals],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     SuperTabsModule.forRoot(),
   ],
   bootstrap: [IonicApp],
-  entryComponents: [..._Pages, ..._components],
+  entryComponents:  [..._Pages, ..._components, ..._modals],
   providers: [
     StatusBar,
     SplashScreen,

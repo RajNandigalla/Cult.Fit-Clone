@@ -1,2 +1,64 @@
-<h1>todo</h1>
-<ion-icon name='https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-512.png'></ion-icon>
+<div>
+    <div class="todo-main">
+        <div class="date-picker">
+            <img src="./../../../assets/imgs/common/leftarrow.png" />
+            <ion-item no-lines>
+                <ion-datetime displayFormat="DDD DD MMM" [(ngModel)]="todayDate"></ion-datetime>
+            </ion-item>
+            <img src="./../../../assets/imgs/common/rightarrow.png" />
+        </div>
+        <div>
+            <div class="log-item">
+                <span class="due">DUE</span>
+                <div class="block">
+                    <div class="first-line">
+                        <span>Meditation - Foundation Series-1</span>
+                        <span>10 Mins</span>
+                    </div>
+                    <span class="second-line">Session(1 of 7)</span>
+                    <img src="http://images.bima.tri.co.id/images/Triyakom.LayarAnak.Banner1.jpg" class="banner"/>
+                    <div class="download">
+                        <img src="./../../../assets/imgs/common/download.png" />
+                        <span>DOWNLOAD</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="log-item">
+                <span class="due">DUE</span>
+                <div class="block">
+                    <div class="first-line">
+                        <span>Workout - Begninners 1</span>
+                        <span>15 Mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="todo-footer">
+        <span class="logged">Logged</span>
+        <div class="log-item">
+            <img src="./../../../assets/imgs/common/tick.png" class="close" />
+            <div class="block">
+                <span class="first-line">Mindfulness</span>
+                <div class="second-line">
+                    <span>Log your last night sleep time</span>
+                    <img src="./../../../assets/imgs/common/more_right.png" />
+                </div>
+            </div>
+        </div>
+        <div class="divider-hor"></div>
+        <div class="log-item">
+            <img src="./../../../assets/imgs/common/close.png" class="close" />
+            <div class="block">
+                <span class="first-line">Fitness</span>
+                <div class="second-line">
+                    <span>Log your last night sleep time</span>
+                    <img src="./../../../assets/imgs/common/more_right.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

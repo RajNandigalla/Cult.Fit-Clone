@@ -1,0 +1,27 @@
+page-shop-details {
+    .back {
+        height: 20px;
+        margin: 1.2rem;
+    }
+    .details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img {
+            height: 320px;
+            margin-bottom: 1rem;
+        }
+        span {
+            color: #424242;
+            font-family: HelMedium;
+            font-size: 1.5em;
+        }
+        p {
+            padding: 1.2rem;
+            text-align: justify;
+            font-family: HelMedium;
+            color: #424242;
+            font-size: 1.2em;
+        }
+    }
+}

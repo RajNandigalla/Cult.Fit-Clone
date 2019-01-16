@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { shopDetailsPage } from './shop-details/shopdetails';
 
 @Component({
   selector: 'page-shop',
@@ -74,8 +75,15 @@ export class ShopPage {
     "http://images.bima.tri.co.id/images/Sirna_portrait12.jpg"
   ];
 
-  constructor(public navCtrl: NavController) {
+  constructor(
+    public navCtrl: NavController
+  ) { }
 
+  public shopDetailsNav(imageUrl: string, packCount: string) {
+    this.navCtrl.push(shopDetailsPage, {
+      img: imageUrl,
+      count: packCount + 1
+    });
   }
 
 }
